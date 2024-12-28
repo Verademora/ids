@@ -1,0 +1,12 @@
+[package]
+name = "ids"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = { version = "0.5.9", features = [ "runtime-async-std-native-tls", "sqlite"]}
+async-std = { version = "1.6", features = ["attributes"]}
+futures = "0.3.18"
+clap = { version = "4.5.23", features = ["derive"] }
+image = "0.25.5"
+image_hasher = "2.0.0"
